@@ -1,0 +1,38 @@
+div{
+  font-size: 14pt;
+  color: black;
+}
+
+.error{
+  color : red;
+}
+
+#error-pwd{
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  height: auto;
+  width: 30%;
+  margin-left: 20%;
+  padding-right: 2%;
+  border: 2px solid red;
+  border-radius: 1em 1em 1em 1em;
+}
+
+#error-pwd ul{
+  font-size : 10pt;
+}
+
+#pwd-strength{
+  padding-right: 2%;
+}
+
+
+#error-form{
+  font-weight: bold;
+}
+
+#labelVerifPwd{
+  font-weight: bold;
+  padding-bottom: 1%;
+}

@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>First step!!</title>
+		<script language="javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<form method="POST" action="#">
+			<p id="error-form">You have to complete all the fields of the form</p>
+			<label for="name">Name : </label><input type="text" name="name" id="name" placeholder="Ex : Guevara"/> <br />
+			<label for="firstname">First name : </label><input type="text" name="firstname" id="firstname" placeholder="Ex : Valentin"/> <br />
+			<label for="age">Age : </label><input type="text" name="age" id="age" placeholder="Ex : 43"/> <span class="error" id="error-age"></span> <br />
+			<label for="login">Login : </label><input type="text" name="login" id="login" placeholder="Ex : cheguevara"/> <span class="error" id="error-login"></span> <br />
+			<label for="pwd" id="labelPass">Password : </label><input type="password" name="pwd" id="pwd"/>
+
+			<div id="error-pwd">
+				<ul class="error">
+				<span id="labelVerifPwd">Security password</span>
+					<li id="number">At least 1 number</li>
+					<li id="lowercase">At least 1 lowercase</li>
+				  <li id="uppercase">At least 1 uppercase</li>
+					<li id="otherCharacter">1 special character, different of letter or number</li>
+					<li id="size">8 characters minimum</li>
+				</ul>
+				 Strength: <progress max="100" value="0" id="progress"></progress> <span id="pwd-strength"></span>
+				<ul class="error">
+					<li class="error" id="error-confirm">You must have the same password</li>
+				</ul>
+			</div><br />
+
+			<label for="confirm-pwd">Confirmation : </label><input type="password" name="confirm-pwd" id="confirm-pwd" /><br />
+			<input type="checkbox" name="CGU" id="CGU">I accept the CGU !</input> <span class="error" id="error-cgu"></span> <br />
+			<button id="button">Submit</button>
+		</form>
+	</body>
+</html>
