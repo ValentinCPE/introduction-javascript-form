@@ -1,0 +1,14 @@
+#introduction-javascript-form
+
+
+
+
+Additionnal features :
+
+
+- Progess bar to indicate the strength of the password.
+
+- little icons when a condition is verified to interact with the user.
+
+
+Git repository: https://github.com/ValentinIUT/introduction-javascript-form

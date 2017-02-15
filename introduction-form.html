@@ -1,13 +1,16 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>First step!!</title>
+		<title>Sign in!!</title>
 		<script language="javascript" src="script.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+		<header>
+			<h1>Sign in</h1>
+		</header>
 		<form method="POST" action="#">
-			<p id="error-form">You have to complete all the fields of the form</p>
+			<p class="error" id="error-form">You have to complete all the fields of the form</p>
 			<label for="name">Name : </label><input type="text" name="name" id="name" placeholder="Ex : Guevara"/> <br />
 			<label for="firstname">First name : </label><input type="text" name="firstname" id="firstname" placeholder="Ex : Valentin"/> <br />
 			<label for="age">Age : </label><input type="text" name="age" id="age" placeholder="Ex : 43"/> <span class="error" id="error-age"></span> <br />
@@ -17,15 +20,15 @@
 			<div id="error-pwd">
 				<ul class="error">
 				<span id="labelVerifPwd">Password security</span>
-					<li id="number">At least 1 number</li>
-					<li id="lowercase">At least 1 lowercase</li>
-				  <li id="uppercase">At least 1 uppercase</li>
-					<li id="otherCharacter">1 special character, different of letter or number</li>
-					<li id="size">8 characters minimum</li>
+					<li>At least 1 number <img src="index.png" id="number"/></li>
+					<li>At least 1 lowercase <img src="index.png" id="lowercase"/></li>
+				  <li>At least 1 uppercase <img src="index.png" id="uppercase"/></li>
+					<li>1 special character, different of letter or number <img src="index.png" id="otherCharacter"/></li>
+					<li>8 characters minimum <img src="index.png" id="size"/></li>
 				</ul>
 				 Strength: <progress max="100" value="0" id="progress"></progress> <span id="pwd-strength"></span>
 				<ul class="error">
-					<li class="error" id="error-confirm">You must have the same password</li>
+					<li class="error">You must have the same password <img src="index.png" id="error-confirm"/></li>
 				</ul>
 			</div><br />
 
